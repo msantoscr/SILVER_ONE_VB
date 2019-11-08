@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{249D0721-675A-427B-B7E8-4F26521CEB34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SILVER_ONE_ERP</RootNamespace>
+    <AssemblyName>SILVER-ONE-ERP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\DEVELOPER\Documents\SILVER ONE\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\192.168.1.109\Users\DEVELOPER\Documents\SILVER ONE\</InstallUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <DisallowUrlActivation>true</DisallowUrlActivation>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SILVER_ONE_ERP.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C5FD1714B7202D01A5B8E972DD9A25E38DCBB2ED</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SILVER-ONE-ERP_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ICO_APP.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CURPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CURPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v17.1.Drawing, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1" />
+    <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1.Extensions, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador\frm_accessories.Designer.vb">
+      <DependentUpon>frm_accessories.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_accessories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_add_article.Designer.vb">
+      <DependentUpon>frm_add_article.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_add_article.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_agents.Designer.vb">
+      <DependentUpon>frm_agents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_agents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_arts.Designer.vb">
+      <DependentUpon>frm_arts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_arts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_assign_acc_mat.Designer.vb">
+      <DependentUpon>frm_assign_acc_mat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_assign_acc_mat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_city.Designer.vb">
+      <DependentUpon>frm_city.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_city.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_clients.Designer.vb">
+      <DependentUpon>frm_clients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_clients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_company.Designer.vb">
+      <DependentUpon>frm_company.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_company.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_compras.Designer.vb">
+      <DependentUpon>frm_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_country.Designer.vb">
+      <DependentUpon>frm_country.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_country.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_folios.Designer.vb">
+      <DependentUpon>frm_folios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_folios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_material.Designer.vb">
+      <DependentUpon>frm_material.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_material.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_providers.Designer.vb">
+      <DependentUpon>frm_providers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_providers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_route.Designer.vb">
+      <DependentUpon>frm_route.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_route.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_state.Designer.vb">
+      <DependentUpon>frm_state.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_state.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_status_clients.Designer.vb">
+      <DependentUpon>frm_status_clients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_status_clients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_type_doctos.Designer.vb">
+      <DependentUpon>frm_type_doctos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_type_doctos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_users.Designer.vb">
+      <DependentUpon>frm_users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_user_type.Designer.vb">
+      <DependentUpon>frm_user_type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_user_type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_view_compras.Designer.vb">
+      <DependentUpon>frm_view_compras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_view_compras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frm_warehouse.Designer.vb">
+      <DependentUpon>frm_warehouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frm_warehouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\frn_main_form.Designer.vb">
+      <DependentUpon>frn_main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\frn_main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\MetodosClases.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Service References\ServicioDatos\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SILVER_ERPDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SILVER_ERPDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TOOLS\frm_excel.Designer.vb">
+      <DependentUpon>frm_excel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TOOLS\frm_excel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOLS\frm_pdf.Designer.vb">
+      <DependentUpon>frm_pdf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TOOLS\frm_pdf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOOLS\frm_word.Designer.vb">
+      <DependentUpon>frm_word.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TOOLS\frm_word.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Administrador\frm_accessories.resx">
+      <DependentUpon>frm_accessories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_add_article.resx">
+      <DependentUpon>frm_add_article.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_agents.resx">
+      <DependentUpon>frm_agents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_arts.resx">
+      <DependentUpon>frm_arts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_assign_acc_mat.resx">
+      <DependentUpon>frm_assign_acc_mat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_city.resx">
+      <DependentUpon>frm_city.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_clients.resx">
+      <DependentUpon>frm_clients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_company.resx">
+      <DependentUpon>frm_company.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_compras.resx">
+      <DependentUpon>frm_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_country.resx">
+      <DependentUpon>frm_country.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_folios.resx">
+      <DependentUpon>frm_folios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_material.resx">
+      <DependentUpon>frm_material.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_providers.resx">
+      <DependentUpon>frm_providers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_route.resx">
+      <DependentUpon>frm_route.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_state.resx">
+      <DependentUpon>frm_state.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_status_clients.resx">
+      <DependentUpon>frm_status_clients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_type_doctos.resx">
+      <DependentUpon>frm_type_doctos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_users.resx">
+      <DependentUpon>frm_users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_user_type.resx">
+      <DependentUpon>frm_user_type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_view_compras.resx">
+      <DependentUpon>frm_view_compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frm_warehouse.resx">
+      <DependentUpon>frm_warehouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\frn_main_form.resx">
+      <DependentUpon>frn_main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TOOLS\frm_excel.resx">
+      <DependentUpon>frm_excel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOLS\frm_pdf.resx">
+      <DependentUpon>frm_pdf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOOLS\frm_word.resx">
+      <DependentUpon>frm_word.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\ServicioDatos\WebService1.wsdl" />
+    <None Include="SILVER-ONE-ERP_ClaveTemporal.pfx" />
+    <None Include="SILVER_ERPDataSet.xsc">
+      <DependentUpon>SILVER_ERPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SILVER_ERPDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SILVER_ERPDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SILVER_ERPDataSet.xss">
+      <DependentUpon>SILVER_ERPDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Usuario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shapelabels_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shapelabels_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geopointmap_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geopointmap_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renamedatasource_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renamedatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletelist_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\richeditclearformatting_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\richeditclearformatting_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inlinesizelegend_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inlinesizelegend_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\legendnone2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\legendnone2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masterfilter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masterfilter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ignoremasterfilter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ignoremasterfilter_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tableproperties_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouser_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouser_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usergroup_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boresume_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsetsymbolscircled3_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsetsymbolscircled3_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodetails_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bodetails_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customization_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customization_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\general_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\general_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectdirectory_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectdirectory_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocustomer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bocustomer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importimage_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boposition2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boposition2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsetstars3_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconsetstars3_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosale_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosale_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editdatasource_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editdatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servermode_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouser_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboardtitle_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unmergecells_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unmergecells_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttopdf_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttopdf_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inlinewithtext_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inlinewithtext_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boproductgroup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boproductgroup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boorderitem_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boorderitem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioDatos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\ServicioDatos\configuration.svcinfo" />
+    <None Include="Service References\ServicioDatos\configuration91.svcinfo" />
+    <None Include="Service References\ServicioDatos\WebService1.disco" />
+    <None Include="Resources\reading_32x32.png" />
+    <None Include="Resources\none_16x16.png" />
+    <None Include="Resources\none_32x32.png" />
+    <None Include="Resources\female_32x32.png" />
+    <None Include="Resources\female_16x16.png" />
+    <None Include="Resources\deletetable_32x32.png" />
+    <None Include="Resources\deletetable_16x16.png" />
+    <None Include="Resources\currency_32x32.png" />
+    <None Include="Resources\currency_16x16.png" />
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\boproduct_32x32.png" />
+    <None Include="Resources\boproduct_16x16.png" />
+    <Content Include="Resources\ICO_APP.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServicioDatos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
